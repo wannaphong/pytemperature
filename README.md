@@ -5,7 +5,7 @@ pytemperature
 
 **Examples of usage**
 
-
+```python
 >>> import pytemperature
 >>> pytemperature.c2f(37.78) # Celsius to Fahrenheit
 100.0
@@ -25,3 +25,4 @@ pytemperature
 80.0
 >>> pytemperature.r2k(80) #Romoe to Celsius
 373.15
+```
