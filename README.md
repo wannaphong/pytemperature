@@ -1,6 +1,5 @@
-﻿=============
-pytemperature
-=============
+# pytemperature
+
     A module that helps to convert temperature units.
 
 **Examples of usage**
