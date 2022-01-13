@@ -1,11 +1,11 @@
-﻿import os
+import os
 from distutils.core import setup
 def read(*paths):
     with open(os.path.join(*paths), 'r') as f:
         return f.read()
 setup(
 	name='pytemperature',
-	version='1.0',
+	version='1.1',
 	packages=['pytemperature'],
 	url='https://python3.wannaphong.com',
 	license='MIT',
