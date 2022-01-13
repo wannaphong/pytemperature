@@ -1,19 +1,21 @@
+# -*- coding: utf-8 -*-
 import os
-from distutils.core import setup
+from setuptools import find_packages, setup
 def read(*paths):
-    with open(os.path.join(*paths), 'r') as f:
+    with open(os.path.join(*paths), 'r', encoding='utf-8-sig') as f:
         return f.read()
 setup(
 	name='pytemperature',
 	version='1.1',
 	packages=['pytemperature'],
-	url='https://python3.wannaphong.com',
+	url='https://github.com/wannaphong/pytemperature',
 	license='MIT',
 	author='Wannaphong Phatthiyaphaibun',
 	author_email='wannaphong@yahoo.com',
 	keywords = "temperature science",
 	description='Scale of temperature',
-	long_description=(read('README.txt')),
+	long_description=(read('README.md')),
+	long_description_content_type="text/markdown",
 	classifiers= [
 		'Development Status :: 5 - Production/Stable',
 		'Intended Audience :: Developers',
