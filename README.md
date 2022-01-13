@@ -20,8 +20,8 @@
 310.93
 >>> pytemperature.r2c(80) # Romoe to Celsius
 100.0
->>> pytemperature.c2r(100) # Romoe to Celsius
+>>> pytemperature.c2r(100) # Celsius to Romoe
 80.0
->>> pytemperature.r2k(80) #Romoe to Celsius
+>>> pytemperature.r2k(80) #Romoe to Kelvin
 373.15
 ```
