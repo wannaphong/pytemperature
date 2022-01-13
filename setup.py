@@ -2,7 +2,7 @@
 from os import path
 from setuptools import find_packages, setup
 basedir = path.abspath(path.dirname(__file__))
-def read(*paths):
+def read(paths):
     with open(path.join(basedir,paths), 'r', encoding='utf-8-sig') as f:
         return f.read()
 setup(
