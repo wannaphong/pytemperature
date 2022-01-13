@@ -1,4 +1,4 @@
-__author__ = 'วรรณพงษ์'
+__author__ = 'Wannaphong Phatthiyaphaibun'
 #pytemperature
 def c2f(arg):
     f = ((arg/5)*9)+32
