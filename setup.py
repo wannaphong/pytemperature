@@ -1,10 +1,10 @@
 # -*- coding: utf-8 -*-
-from os import path
 from setuptools import find_packages, setup
-basedir = path.abspath(path.dirname(__file__))
-def read(paths):
-    with open(path.join(basedir,paths), 'r', encoding='utf-8-sig') as f:
-        return f.read()
+
+with open('README.md','r',encoding='utf-8-sig') as f:
+    readme = f.read()
+
+
 setup(
 	name='pytemperature',
 	version='1.1',
@@ -13,10 +13,11 @@ setup(
 	license='MIT',
 	author='Wannaphong Phatthiyaphaibun',
 	author_email='wannaphong@yahoo.com',
-	keywords = "temperature science",
+	keywords = 'temperature science',
 	description='Scale of temperature',
-	long_description=(read('README.md')),
-	long_description_content_type="text/markdown",
+	long_description=readme,
+	long_description_content_type='text/markdown',
+	python_requires=">=3.6",
 	classifiers= [
 		'Development Status :: 5 - Production/Stable',
 		'Intended Audience :: Developers',
@@ -24,7 +25,6 @@ setup(
 		'License :: OSI Approved :: MIT License',
 		'Operating System :: OS Independent',
 		'Programming Language :: Python',
-		'Programming Language :: Python :: 2',
 		'Programming Language :: Python :: 3',
 		'Programming Language :: Python :: Implementation :: CPython',
 		'Programming Language :: Python :: Implementation :: IronPython'
